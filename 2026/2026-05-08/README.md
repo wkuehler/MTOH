@@ -13,8 +13,7 @@ This auto-launched Flow queries all open approval requests (`ProcessInstanceWork
 3. **Track current user** — On the first record, sets the working user ID and email. On subsequent records, checks whether the actor has changed.
 4. **Count** — Increments a counter for each workitem belonging to the current approver.
 5. **Send email** — When a new approver is detected (user ID changes), sends the previous approver an HTML email with their pending count, then resets the counter and starts tracking the new user.
-
-> **Known gap:** The last approver in the collection does not receive an email. The send is triggered only when the user *changes*, so the final group is never flushed.
+6. **Flush last approver** — When the loop exhausts all records (`noMoreValuesConnector`), a second email action sends the final approver their pending count so no one is missed.
 
 ## Files
 
