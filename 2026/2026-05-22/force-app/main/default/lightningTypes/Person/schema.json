@@ -1,0 +1,23 @@
+{
+  "description" : "",
+  "lightning:type" : "lightning__objectType",
+  "title" : "Person",
+  "required" : [ "firstName", "lastName", "birthDate" ],
+  "properties" : {
+    "firstName" : {
+      "title" : "firstName",
+      "description" : "First name of the person",
+      "lightning:type" : "lightning__textType"
+    },
+    "lastName" : {
+      "title" : "lastName",
+      "description" : "Last name of the person",
+      "lightning:type" : "lightning__textType"
+    },
+    "birthDate" : {
+      "title" : "birthDate",
+      "description" : "Date of birth of the person",
+      "lightning:type" : "lightning__dateType"
+    }
+  }
+}

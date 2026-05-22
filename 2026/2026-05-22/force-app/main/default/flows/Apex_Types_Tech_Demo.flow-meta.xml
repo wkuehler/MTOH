@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_to_Map_Counter</name>
+        <label>Add to Map Counter</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 3</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 3</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToCounterMap</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 3</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.setMapKey</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Map String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Apex_Data_Type_Display</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_to_string_list</name>
+        <label>Add to string list</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>dtt.dt_list_string</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>List String 1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.dt_list_string</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>List String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.dt_list_string</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>List String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.dt_list_string</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>List String 3</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_String_Set</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_to_String_Set</name>
+        <label>Add to String Set</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>dtt.addToStringSet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Some String 1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToStringSet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Some String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToStringSet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Some String 2</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.addToStringSet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Some String 3</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Map_Counter</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_basic_variables</name>
+        <label>Set basic variables</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>dtt.dt_decimal</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>3.14</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.dt_integer</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>dtt.dt_string</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>I like pie!</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_string_list</targetReference>
+        </connector>
+    </assignments>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <environments>Default</environments>
+    <interviewLabel>Apex Types - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Apex Types - Tech Demo</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Apex_Data_Type_Display</name>
+        <label>Apex Data Type Display</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Display_DTT_DT</name>
+            <fieldText>&lt;p&gt;{!dtt}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_basic_variables</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>dtt</name>
+        <apexClass>DataTypeTest</apexClass>
+        <dataType>Apex</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
