@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title_Field__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   NOT(ISBLANK( Account_Review__c )),
+   Account_Review__r.Name  &amp; &quot; (&quot; &amp;  Account_Review__r.Account__r.Name &amp; &quot;)&quot;,
+   IF(NOT(ISBLANK( Case__c )),  Case__r.CaseNumber &amp; &quot; (&quot; &amp;  Case__r.Account.Name &amp; &quot;)&quot;, &quot;Other&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Title Field</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
