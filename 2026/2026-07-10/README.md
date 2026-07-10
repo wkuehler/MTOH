@@ -4,6 +4,10 @@ Built during Military Trailblazer Office Hours — 2026-07-10
 
 **GitHub Repo:** https://github.com/wkuehler/MTOH/tree/main/2026/2026-07-10
 
+## Watch the Session
+
+[![Watch the session on YouTube](https://img.youtube.com/vi/rXYE5HrNyqM/maxresdefault.jpg)](https://youtu.be/rXYE5HrNyqM)
+
 ## The Use Case
 
 A client wanted to default a record's Name field on creation — e.g., every time an
